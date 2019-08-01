@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="static/css/bootstrap.css">
+        <link rel="stylesheet" href="static/css/bootstrap-switch.css">
+        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+        <title>ほんのてすり</title>
+        <style>body {padding: 10px;}</style>
+    </head>
+    <body>
+      <script src="static/js/jquery-3.4.1.js"></script>
+      <script src="static/js/bootstrap.bundle.min.js"></script>
+      <script src="static/js/bootstrap-switch.js"></script>
+      <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+      <div>
+          本の手すり:
+          <a href="{{ url_for('index') }}">Home</a>
+          <a href="{{ url_for('login') }}">Login</a>
+      </div>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>

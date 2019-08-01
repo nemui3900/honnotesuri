@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>オライリー10連ガチャ</h1>
+<table class='table table-primary' border='1'>
+  <tr>
+    <th>タイトル</th>
+    <th>値段</th>
+  </tr>
+
+  {% for name,price in data: %}
+  <tr>
+    <td>
+      {{ name }}
+    </td>
+    <td>
+      {{ price }}
+    </td>
+  </tr>
+  {% endfor %}
+  <tr>
+    <td colspan='2' align='right'>合計　{{ psum }}円</td>
+
+  </tr>
+
+</table>
+{% endblock %}

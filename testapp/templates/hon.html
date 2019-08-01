@@ -1,0 +1,15 @@
+{% extends "bootstrap/layout.html" %}
+{% block content %}
+<h1>{{ title }}</h1>
+  {% for line in lines: %}
+    <p>{{ line.rstrip() }}</p>
+    {% if  line[0] == ' ' or line[0] == '\t' %}
+    <input type="checkbox" checked data-toggle="toggle">
+      <label class="custom-control-label" for="customSwitches">塗りつぶす</label>
+    </div>
+    </p>
+    {% endif %}
+
+  {% endfor %}
+
+{% endblock %}
